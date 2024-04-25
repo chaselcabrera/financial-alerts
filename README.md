@@ -59,7 +59,7 @@ Supports GET & POST:
 - Build in error handling
 
 
-## Steps to Deploy on Production
+## Steps to Deploy Production / AWS
 
 
 1. Stand Up Postgres DB RDS in AWS
