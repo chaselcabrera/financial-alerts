@@ -86,19 +86,19 @@ Supports GET & POST:
 5. Secure application: Configure IAM roles, security groups and VPC and leverage AWS Secrets to manage credentials
 
 6. Container orchestration with ECS
-    Setup ECS cluster
-    Create an ECS task definition for Django application
+    - Setup ECS cluster
+    - Create an ECS task definition for Django application
 
 7. Push Docker Image to ECR
-    Create a repositry in ECR to store the Docker Image and Push Docker Image
+    - Create a repositry in ECR to store the Docker Image and Push Docker Image
 
 8. Deploy to AWS
-    Use ECS to deploy Dockerized Django application
-    Configure auto-scaling policies and health checks
+    - Use ECS to deploy Dockerized Django application
+    - Configure auto-scaling policies and health checks
 
 9. Load Balancer, DNS & SSL
-    Setup DNS records to point domain to AWS resources, load balancer
+    - Setup DNS records to point domain to AWS resources, load balancer
 
 10. Site should be functional at this point but as an added step Redis cache could be used as a state cache
 
-11.) Bonus, setup CDN on S3 and leverage CloudFrount for any images/videos 
+11. Bonus, setup CDN on S3 and leverage CloudFrount for any images/videos 
