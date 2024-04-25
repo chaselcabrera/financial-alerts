@@ -47,8 +47,8 @@ Supports GET & POST:
 5. Run the development server using `python manage.py runserver`.
 
 ## Testing
-1.) Test file can be found in budget app called "tests.py"
-2.) To run "python manage.py test"
+1. Test file can be found in budget app called "tests.py"
+2. To run "python manage.py test"
 
 ## Given Additional Time
 
@@ -62,10 +62,10 @@ Supports GET & POST:
 ## Steps to Deploy on Production
 
 
-1.) Stand Up Postgres DB RDS in AWS
-2.) Setup pgadmin
-3.) Adjust DJANGO settings to utilizing a production settings.py instead of the dev and ensure the production settings are routed to the Postres DB on AWS, adjust security settings
-4.) Dockerize the django app, including necessary dependencies and configuration in the Dockerfile and building the Docker image
+1. Stand Up Postgres DB RDS in AWS
+2. Setup pgadmin
+3. Adjust DJANGO settings to utilizing a production settings.py instead of the dev and ensure the production settings are routed to the Postres DB on AWS, adjust security settings
+4. Dockerize the django app, including necessary dependencies and configuration in the Dockerfile and building the Docker image
 
     - Install Docker Desktop
     - Setup Dockerfile within project folder
@@ -83,22 +83,22 @@ Supports GET & POST:
     RUN pip install —no-cache-dir -r requirements.txt
     ...
 
-5.) Secure application: Configure IAM roles, security groups and VPC and leverage AWS Secrets to manage credentials
+5. Secure application: Configure IAM roles, security groups and VPC and leverage AWS Secrets to manage credentials
 
-6.) Container orchestration with ECS
+6. Container orchestration with ECS
     Setup ECS cluster
     Create an ECS task definition for Django application
 
-7.) Push Docker Image to ECR
+7. Push Docker Image to ECR
     Create a repositry in ECR to store the Docker Image and Push Docker Image
 
-8.) Deploy to AWS
+8. Deploy to AWS
     Use ECS to deploy Dockerized Django application
     Configure auto-scaling policies and health checks
 
-9.) Load Balancer, DNS & SSL
+9. Load Balancer, DNS & SSL
     Setup DNS records to point domain to AWS resources, load balancer
 
-10.) Site should be functional at this point but as an added step Redis cache could be used as a state cache
+10. Site should be functional at this point but as an added step Redis cache could be used as a state cache
 
 11.) Bonus, setup CDN on S3 and leverage CloudFrount for any images/videos 
